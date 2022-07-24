@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 
 namespace TempLog
@@ -45,7 +46,7 @@ namespace TempLog
                 columns.Add(value.value.ToString());
             }
 
-            Console.WriteLine(string.Join(",", columns));
+            File.AppendAllText("templog.tsv", string.Join("\t", columns) + "\n");
         }
     }
 
