@@ -4,7 +4,7 @@ using System.Diagnostics;
 namespace TempLog
 {
     /// <summary>
-    /// 温度取得.
+    /// 温度取得
     /// </summary>
     [System.Runtime.Versioning.SupportedOSPlatform("Windows")]
     internal class TemperatureCounter
@@ -30,7 +30,7 @@ namespace TempLog
         /// <summary>
         /// hoge.
         /// </summary>
-        /// <returns>instanceごとのname/valueペア.</returns>
+        /// <returns>instanceごとのname/valueペア</returns>
         public (string name, float value)[] GetValues()
         {
             var results = new List<(string name, float value)>();

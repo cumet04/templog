@@ -142,6 +142,7 @@ csharp_prefer_static_local_function = true:suggestion
 dotnet_diagnostic.SA1200.severity = silent
 dotnet_diagnostic.SA1633.severity = silent
 dotnet_diagnostic.SA1503.severity = silent
+dotnet_diagnostic.SA1629.severity = silent
 ###############################
 # VB Coding Conventions       #
 ###############################
