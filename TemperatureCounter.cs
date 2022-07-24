@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Tlog
+namespace TempLog
 {
     /// <summary>
     /// 温度取得.

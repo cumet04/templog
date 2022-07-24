@@ -2,10 +2,10 @@
 using System.Threading;
 using System.Windows;
 
-namespace Tlog
+namespace TempLog
 {
     /// <summary>
-    /// Interaction logic for App.xaml.
+    /// Entry point and window wrapper.
     /// </summary>
     public partial class App : Application
     {
