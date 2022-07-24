@@ -29,7 +29,7 @@ namespace TempLog
                 new TimerCallback(this.OnTimer),
                 new TimerAction(),
                 0,
-                1000);
+                5 * 60 * 1000);
         }
 
         /// <inheritdoc/>
