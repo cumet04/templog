@@ -27,7 +27,7 @@ namespace TempLog
 
             this.timer = new Timer(
                 new TimerCallback(this.OnTimer),
-                new TemperatureCounter(),
+                new TimerAction(),
                 0,
                 1000);
         }
@@ -42,12 +42,11 @@ namespace TempLog
 
         private void OnTimer(object? o)
         {
-            var counter = o as TemperatureCounter;
-            if (counter == null) return;
+            var action = o as TimerAction;
+            if (action == null) return;
 
-            var temperature = counter.GetValues()[0].value;
-
-            if (this.notifyIcon != null) this.notifyIcon.Text = temperature.ToString();
+            var result = action.Action();
+            if (this.notifyIcon != null) this.notifyIcon.Text = result.Temperature.ToString();
         }
 
         private System.Windows.Forms.ContextMenuStrip Menu()
